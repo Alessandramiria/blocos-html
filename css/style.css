@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  --color-primary: #2E44FF;
+  --color-secondary: #E9E5FF;
+}
+
+html,body{
+  min-height: 100vh;
+  height: 100%;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  color: #121212;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.bloco-container{
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.125);
+  border-radius: 0.25em;
+}
+
+
+
+.flex{display: flex;}
+.col{flex-direction: column;}
+.row{flex-direction: row}
+.jcenter{justify-content: center;}
+.acenter{align-items: center;}
+.jsb{justify-content: space-between;}
+
+.btn{
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 0.15em solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.2em;
+  font-weight: 600;
+  background-color: transparent;
+}
+.btnp{
+  background-color: var(--color-primary);
+  color:white;
+  border-width: 0;
+}
+
+
+
+.circulo-icon{
+  --s:3em;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--s);
+  width: var(--s);
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  
+}
+
+.circulo-icon > span{
+  color: var(--color-primary);
+}
+
+.bloco-container .bloco-titulo{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  flex-direction: row;
+}
+
+.bloco-container .bloco-body{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.bloco-container .bloco-body >h3{
+  opacity: 0.85;
+}
+
+.bloco-container .bloco-body >h4{
+  opacity: 0.5;
+}
+.bloco-body .bloco-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+
+}
+.bloco-body .bloco-input > input{
+  display: flex;
+  align-items: center;
+  height: 3em;
+  padding: 1em;
+  flex: 1;
+  border-radius: 0.25em;
+  border: 0.125em solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  font-weight: 600;
+}
+
+.bloco-body .bloco-input > input:focus{
+  border-color: var(--color-primary);
+}
+
+.bloco-container .bloco-botoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5em;
+  padding-top: 1em;
+
+}
